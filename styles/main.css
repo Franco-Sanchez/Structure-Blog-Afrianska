@@ -7,24 +7,281 @@
 
 * {
     box-sizing: border-box;
+    color: black;
+    letter-spacing: 0.04em;
 }
 
 body {
     max-width: 1366px;
     margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial;
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 16px;
 }
 
 h2 {
-    font-family: Gilroy;
+    font-size: 1.8rem;
 }
+
+h5 {
+    font-size: 2.3rem;
+}    
 
 a {
     text-decoration: none;
+}
+
+nav {
+    width: 361.5px;
+}
+
+img {
+    width: 100%;
 }
 
 a, i {
     cursor: pointer;
 }
 
+h2, h5 {
+    line-height: 46px;
+}
+
+.font-comun {
+    font-family: Helvetica;
+}
+
+.font-marca {
+    font-family: Gilroy;
+}
+
+.blanco {
+    color: white;
+}
+
+.morado {
+    color: #1F3F68;
+}
+
+.lila {
+    color: #356EAD;
+}
+
+.azul-oscuro {
+    color: #316099;
+}
+
+.fondo {
+    background-color: #316099;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.circulo {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.circulo-blanco {
+    background-color: white;
+    border: 2px solid #316099;
+    position: absolute;
+    left: 30%;
+}
+
+.flexible {
+    display: flex;
+}
+
+.grilla {
+    display: grid;
+}
+
+.justificacion-centrada {
+    justify-content: center;
+}
+
+.justificacion-entre {
+    justify-content: space-between;
+}
+
+.alineacion-centrada {
+    align-items: center;
+}
+
+.columna {
+    flex-direction: column;
+}
+
+.salto-linea {
+    line-height: 26px;
+}
+
+.font-logo {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.font-subtitulo {
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+.font-menor {
+    font-size: .9rem;
+    line-height: 24px;
+}
+
+.opacidad {
+    opacity: 0.5;
+}
+
+.posicion {
+    position: relative;
+    width: 64px;
+}
+
+.compartir {
+    width: 75px;
+}
+
 /* ------ Header ------ */
+
+header {
+    padding: 49px 6.1% 49px 6.1%;
+}
+
+/* ------ Section - Blog Title ------ */
+
+main section:first-child {
+    position: relative;
+    height: 250px;
+    background: linear-gradient(253.6deg, #98D0FC 2.46%, #3481D7 93.24%);
+}
+
+main section:first-child p {
+    width: 58%;
+    text-align: center;
+}
+
+main section:first-child::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/desktop/pez.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ------ Form ------ */
+
+form {
+    margin: 56px 15.6%;
+    height: 56px;
+    background-color: #F4F4F4;
+    border-radius: 10px;
+}
+
+input[type="search"] {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-right: 3%;
+}
+
+form div {
+    padding: 0 3%;
+}
+
+/* ------ First Container Section  ------ */
+
+main section:nth-child(3) {
+    margin: 0 15.6%;
+}
+
+.contenedor-primeraSeccion {
+    grid-template-columns: 40.9% 58.2%;
+    grid-column-gap: 0.9%;
+    grid-row-gap: 34px;
+    margin-bottom: 32px;
+}
+
+.contenedor-primeraSeccion article {
+    grid-column: 1;
+}
+
+.contenedor-primeraSeccion h3 {
+    font-size: 2.2rem;
+    line-height: 46px;
+}
+
+.contenedor-segundaSeccion {
+    grid-template-columns: repeat(3,32.3%);
+    grid-template-rows: 477px;
+    grid-column-gap: 1.5%;
+    grid-row-gap: 54px;
+    margin-bottom: 58px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.contenedor-segundaSeccion h3 {
+    font-size: 1.4rem;
+    line-height: 32px;
+}
+
+.contenedor-segundaSeccion a {
+    grid-column: span 3;
+    justify-self: flex-end;
+    margin-bottom: 26px;
+}
+
+/* ------ Second Container Section  ------ */
+
+main section:nth-child(4) {
+    margin: 0 15.6%;
+    grid-template-columns: 35.4% 63.6%;
+   	grid-column-gap: 1%;
+    grid-row-gap: 32px;
+}
+
+main section:nth-child(4) img {
+    grid-column: 1;
+}
+
+main section:nth-child(4) div {
+    margin-top: 24px;
+}
+
+main section:nth-child(4) div:last-child {
+    justify-self: flex-end;
+}
+
+/* ------ Footer ------ */
+
+.footer {
+    width: 93%;
+    height: 869px;
+    border-radius: 0px 200px 0px 0px;
+    margin-top: 98px;
+}
+
+.footer article:first-child a {
+    background-color: #5A98D0;
+    padding: 15px 74px;
+    border-radius: 10px;
+}
+
+footer .posicion div:first-child {
+    background-color: #98C3E8;
+}

@@ -35,7 +35,7 @@ a {
 }
 
 nav {
-    width: 361.5px;
+    min-width: 361.5px;
 }
 
 img {
@@ -149,6 +149,18 @@ h2, h5 {
 
 .compartir {
     width: 75px;
+}
+
+.margen-arriba {
+    margin-top: 32px;
+}
+
+.margen-enlace {
+    margin-bottom: 16px;
+}
+
+.margen-parrafo {
+    margin-bottom: 24px;
 }
 
 /* ------ Header ------ */
@@ -278,10 +290,42 @@ main section:nth-child(4) div:last-child {
 
 .footer article:first-child a {
     background-color: #5A98D0;
-    padding: 15px 74px;
     border-radius: 10px;
+    width: 24%;
+    height: 56px;
 }
 
 footer .posicion div:first-child {
     background-color: #98C3E8;
+}
+
+
+.contenedor-primerFooter {
+    padding: 7.3% 10.1% 7.7% 17%;
+    border-bottom: 1px solid rgba(255 255 255 / 0.4);
+}
+
+.contenedor-primerFooter h5 {
+    max-width: 306px;
+}
+
+.contenedor-primerFooter p {
+    max-width: 460px;
+    margin-top: 32px;
+}
+
+.footer .grilla {
+    padding: 7.8% 10.1% 5.1% 17%;
+	grid-template-columns: 32% 17.7% 11.5%;
+    grid-column-gap: 19.4%;
+    grid-row-gap: 64px;
+}
+
+.footer .grilla p {
+    display: inline-flex;
+    width: 100%;
+} 
+
+.footer span {
+    margin-right: 5.5%;
 }

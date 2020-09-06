@@ -212,6 +212,10 @@ input[type="search"] {
     padding-right: 3%;
 }
 
+input[type="search"]::placeholder {
+    color: #1F3F68;
+}
+
 form div {
     padding: 0 3%;
 }
